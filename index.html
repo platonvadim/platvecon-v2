@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>PlatVecon | Tehnologii Moderne</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="/assets/img/logo-full.png" alt="PlatVecon logo" style="max-width: 130px">
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt-2'></i>
+                            <span>Acasă</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">
+                            <i class='bx bx-building-house'></i>
+                            <span>Producție</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#value" class="nav__link">
+                            <i class='bx bx-award'></i>
+                            <span>Valori</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-phone'></i>
+                            <span>Contacte</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+           
+            
+        
+            <!-- Theme change button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            <!-- Language selector button -->
+            <div class="language-picker js-language-picker" data-trigger-class="li4-btn li4-btn--subtle js-tab-focus">
+                <form action="" class="language-picker__form">
+                  <label for="language-picker-select">Select your language</label>
+              
+                  <select name="language-picker-select" id="language-picker-select">
+                    <option lang="ru" value="ru">Русский</option>
+                    <option lang="ro" value="" selected>Româna</option>
+                    <!-- <option lang="fr" value="fr">Français</option>
+                    <option lang="it" value="it">Italiano</option> -->
+                  </select>
+                </form>
+              </div>
+
+            <!-- <a href="#" class="button nav__button">
+                Call
+            </a> -->
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Producător <br> de încredere <br> din Orhei
+                    </h1>
+                    <p class="home__description">
+                        Ferestre și uși din plastic de la producător din Orhei, 
+                        construcții din aluminiu, plase anti-țânțar, accesorii, 
+                        furnitură și multe altele…
+                    </p>
+
+    
+                    <a href="#contact"><button class="button"><i class='bx bxs-map'></i> Vizitează Showroom</button>
+                    </a>
+
+                    <div class="home__value">
+                        <div>
+                            <h1 class="home__value-number">
+                                10K <span>+</span>
+                            </h1>
+                            <span class="home__value-description">
+                                Clienți <br> deserviți
+                            </span>
+                        </div>
+                        <div>
+                            <h1 class="home__value-number">
+                                15 <span>+</span>
+                            </h1>
+                            <span class="home__value-description">
+                                Ani <br> de experiență
+                            </span>
+                        </div>
+                        <div>
+                            <h1 class="home__value-number">
+                                10 <span>ani</span>
+                            </h1>
+                            <span class="home__value-description">
+                                Garanție <br> la produse
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__orbe"></div>
+
+                    <div class="home__img">
+                        <img src="assets/img/home.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== LOGOS ====================-->
+        <section class="logos section">
+            <div class="logos__container container grid">
+                <!-- <div class="logos__img">
+                    <img src="assets/img/logo1.png" alt="">
+                </div> -->
+                <div class="logos__img">
+                    <img src="assets/img/logo2.png" alt="">
+                </div>
+                <!-- <div class="logos__img">
+                    <img src="assets/img/logo3.png" alt="">
+                </div> -->
+                <div class="logos__img">
+                    <img src="assets/img/logo4.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== POPULAR ====================-->
+        <!-- Tab links -->
+     <section class="popular section" id="popular">
+              <div class="container">
+                <span class="section__subtitle">Alegerea bună</span>
+                <h2 class="section__title">
+                    Oferta noastră<span>.</span>
+                </h2>
+        <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Ferestre')" id="defaultOpen">Ferestre</button>
+        <button class="tablinks" onclick="openCity(event, 'Usi')">Usi</button>
+        <button class="tablinks" onclick="openCity(event, 'Rolete')">Rolete</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="Ferestre" class="tabcontent" >
+                <div class="popular__container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window1.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre clasice din PVC
+                                </h3>
+                                <p class="popular__description">
+                                    Ferestre din plastic de formă dreptunghiulară obișnuită pentru o casă, un apartament sau o cabană. Măsurăm deschiderea, producem, livrăm și instalăm structuri.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window2.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre colorate si laminate
+                                </h3>
+                                <p class="popular__description">
+                                    Catalogul de laminare include mai mult de 50 de culori.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window3.jpg" alt="" class="popular__img">
+                                
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre cu izolare fonică suplimentară
+                                </h3>
+                                <p class="popular__description">
+                                    O soluție excelentă pentru casele din apropierea autostrăzilor zgomotoase. Achiziționând astfel de ferestre din plastic, vă garantați confort și confort.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window4.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre de formă complexă
+                                </h3>
+                                <p class="popular__description">
+                                    La producția proprie din Sankt Petersburg, producem ferestre de orice formă complexă, inclusiv rotunde, trapezoidale și poligonale.
+
+
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window5.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre pentru o casă de țară
+                                </h3>
+                                <p class="popular__description">
+                                    Cream modele in conformitate cu orice dorinta a clientului si tinand cont de tipul de locuinta din casa.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window6.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre cu monograme
+                                </h3>
+                                <p class="popular__description">
+                                    Utilizarea elementelor decorative în interiorul unei ferestre cu geam dublu este o modalitate de a face designul individual.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window7.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Portaluri glisante
+                                </h3>
+                                <p class="popular__description">
+                                    Portaluri glisante paralele cu un număr diferit de cercevele. Nu sunt inferioare în ceea ce privește economisirea căldurii față de ferestrele și ușile clasice.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window8.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre cu funcții suplimentare
+                                </h3>
+                                <p class="popular__description">
+                                    Echipamentele extinse (rezistență sporită la efracție, protecție suplimentară și alte opțiuni) fac ferestrele din PVC cât mai confortabile.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window9.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre arcuite
+                                </h3>
+                                <p class="popular__description">
+                                   Pentru case care nu sunt limitate de standarde.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                </div>
+        </div>
+
+        <div id="Usi" class="tabcontent">
+          <div class="popular__container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window1.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre clasice din PVC
+                                </h3>
+                                <p class="popular__description">
+                                    Ferestre din plastic de formă dreptunghiulară obișnuită pentru o casă, un apartament sau o cabană. Măsurăm deschiderea, producem, livrăm și instalăm structuri.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window2.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre colorate si laminate
+                                </h3>
+                                <p class="popular__description">
+                                    Catalogul de laminare include mai mult de 50 de culori.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window3.jpg" alt="" class="popular__img">
+                                
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre cu izolare fonică suplimentară
+                                </h3>
+                                <p class="popular__description">
+                                    O soluție excelentă pentru casele din apropierea autostrăzilor zgomotoase. Achiziționând astfel de ferestre din plastic, vă garantați confort și confort.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window4.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre de formă complexă
+                                </h3>
+                                <p class="popular__description">
+                                    La producția proprie din Sankt Petersburg, producem ferestre de orice formă complexă, inclusiv rotunde, trapezoidale și poligonale.
+
+
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window5.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre pentru o casă de țară
+                                </h3>
+                                <p class="popular__description">
+                                    Cream modele in conformitate cu orice dorinta a clientului si tinand cont de tipul de locuinta din casa.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window6.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre cu monograme
+                                </h3>
+                                <p class="popular__description">
+                                    Utilizarea elementelor decorative în interiorul unei ferestre cu geam dublu este o modalitate de a face designul individual.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window7.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Portaluri glisante
+                                </h3>
+                                <p class="popular__description">
+                                    Portaluri glisante paralele cu un număr diferit de cercevele. Nu sunt inferioare în ceea ce privește economisirea căldurii față de ferestrele și ușile clasice.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window8.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre cu funcții suplimentare
+                                </h3>
+                                <p class="popular__description">
+                                    Echipamentele extinse (rezistență sporită la efracție, protecție suplimentară și alte opțiuni) fac ferestrele din PVC cât mai confortabile.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/window9.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h3 class="popular__title">
+                                    Ferestre arcuite
+                                </h3>
+                                <p class="popular__description">
+                                   Pentru case care nu sunt limitate de standarde.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                </div>
+        </div>
+
+        <div id="Rolete" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+        </div>
+        
+      
+
+                
+            </div>
+        </section>
+
+        <!--==================== VALUE ====================-->
+        <section class="value section" id="value">
+            <div class="value__container container grid">
+                <div class="value__images">
+                    <div class="value__orbe"></div>
+
+                    <div class="value__img">
+                        <img src="assets/img/value.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="value__content">
+                    <div class="value__data">
+                        <span class="section__subtitle">Valorile Noastre</span>
+                        <h2 class="section__title">
+                            Valoarea pe care v-o oferim<span>.</span>
+                        </h2>
+                        <p class="value__description">
+                            Suntem întotdeauna gata să vă ajutăm oferindu-vă cele mai bune servicii.
+                            Credem că un loc bun de locuit vă poate face viața mai bună.
+                        </p>
+                    </div>
+
+                    <div class="value__accordion">
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class='bx bxs-shield-x value__accordion-icon'></i>
+                                <h3 class="value__accordion-title">
+                                    Cele mai bune prețuri în Orhei
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                            </header>
+
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    Prețul pe care îl oferim este cel mai bun pentru dvs,
+                                    garantăm că nu se modifică prețul proprietății dvs. din cauza
+                                    diferitelor costuri neașteptate care pot apărea.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class='bx bxs-x-square value__accordion-icon'></i>
+                                <h3 class="value__accordion-title">
+                                    Prevent unstable prices
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                            </header>
+
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    Price we provides is the best for you,
+                                    we guarantee no price changes on your property due
+                                    to various unexpected costs that may come.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class='bx bxs-bar-chart-square value__accordion-icon'></i>
+                                <h3 class="value__accordion-title">
+                                    Cele mai bune prețuri în Orhei
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                            </header>
+
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    Prețul pe care îl oferim este cel mai bun pentru dvs,
+                                    garantăm că nu se modifică prețul proprietății dvs. din cauza
+                                    diferitelor costuri neașteptate care pot apărea.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class='bx bxs-check-square value__accordion-icon'></i>
+                                <h3 class="value__accordion-title">
+                                    Security of your data
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                            </header>
+
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    Price we provides is the best for you,
+                                    we guarantee no price changes on your property due
+                                    to various unexpected costs that may come.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__images">
+                    <div class="contact__orbe"></div>
+
+                    <div class="contact__img">
+                        <img src="assets/img/contact.png" alt="">
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <div class="contact__data">
+                        <span class="section__subtitle">Contacteză cu noi</span>
+                        <h2 class="section__title">
+                            Datele de contact<span>.</span>
+                        </h2>
+                        <p class="contact__description">
+                            Aveți probleme în construirea casa visurilor dumneavoastră? Aveți nevoie de un
+                            ghid în cumpărarea ferestrelor sau altor servicii? sau aveți nevoie de o consultare
+                            pe alte probleme? Doar contactați-ne.
+                        </p>
+                    </div>
+
+                    <div class="contact__card">
+                        <div class="contact__card-box">
+                            <div class="contact__card-info">
+                                <i class='bx bxs-phone-call'></i>
+
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        Telefon
+                                    </h3>
+                                    <p class="contact__card-description">
+                                        0789 99 911
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="button contact__card-button">
+                                Sună acum
+                            </button>
+                        </div>
+
+                        <div class="contact__card-box">
+                            <div class="contact__card-info">
+                                <i class='bx bxs-message-rounded-dots'></i>
+
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        Chat FB
+                                    </h3>
+                                    <p class="contact__card-description">
+                                        m.me/platvecon
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a href="https://m.me/platvecon"><button class="button contact__card-button" >
+                                Scrie acum
+                            </button>
+                               
+                            </a>
+                        </div>
+
+                        <div class="contact__card-box">
+                            <div class="contact__card-info">
+                                <i class='bx bxs-video'></i>
+
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        WhatsApp
+                                    </h3>
+                                    <p class="contact__card-description">
+                                        0791 27 777
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=%2B37379127777">
+                            <button class="button contact__card-button">
+                                WhatsApp
+                            </button>
+                        </a>
+                        </div>
+
+                        <div class="contact__card-box">
+                            <div class="contact__card-info">
+                                <i class='bx bxs-envelope'></i>
+
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        Email
+                                    </h3>
+                                    <p class="contact__card-description">
+                                        platvecon@mail.ru
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="mailto:platvecon@mail.ru">
+                            <button class="button contact__card-button">
+                                Lasă-ne un mesaj
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--==================== SUBSCRIBE ====================-->
+        <script type="text/javascript"  charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8ea08249061b8a790aa79bda19cfd382a3cd562f929c544486b4ce4ba7995ce9&amp;width=100%25&amp;height=400&amp;lang=ro_RO&amp;scroll=false"></script>
+
+        <!-- <section class="subscribe section">
+            
+            <div class="subscribe__container container"> 
+                <br>
+                <h1 class="subscribe__title">
+                    Vă asteptăm la noi!
+                </h1>
+                <i class='bx bxs-hand-down' style="font-size: 72px; color:aliceblue"></i>
+
+                <p class="subscribe__description">
+                    <ul>
+                        <li class="underlined underline-overflow"><a href="#">Fabrica - str. Unirii 57/T</a></li>
+                        <li class="underlined underline-overflow"><a href="#">ShowRoom - str. Eminescu 13</a></li>
+                        <li class="underlined underline-overflow"><a href="#">Oficiu - str. Eminescu 21</a></li>
+                    </ul>
+                </p>
+                
+                <a href="#" class="button subscribe__button">
+                    Get Started
+                </a>
+            </div>
+        </section> -->
+
+        <section class="popular section" id="adr">
+            <div class="container">
+                <span class="section__subtitle">Adrese</span>
+                <h2 class="section__title">
+                    Asteptăm pe Dvs. în vizită<span>.</span>
+                </h2>
+
+                <div class="popular__container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/oficiu1.webp" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h2 class="popular__price">
+                                    <span>str.</span> Unirii 57/T
+                                </h2>
+                                <h3 class="popular__title">
+                                    Fabrica
+                                </h3>
+                                <p class="popular__description">
+                                    Vizitați sediul nostru principal în str. Unirii 57/T, Orhei.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/oficiu2.webp" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h2 class="popular__price">
+                                    <span>str. </span> Eminescu 10
+                                </h2>
+                                <h3 class="popular__title">
+                                     ShowRoom
+                                </h3>
+                                <p class="popular__description">
+                                    Descoperiți Showroom-ul nostru în Eminescu 10, Orhei
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <img src="assets/img/oficiu3.webp" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <h2 class="popular__price">
+                                    <span>str. </span>Eminescu 21
+                                </h2>
+                                <h3 class="popular__title">
+                                    Oficiu
+                                </h3>
+                                <p class="popular__description">
+                                    Faceți comanda în oficiu Eminescu 21, Orhei
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    PlatVecon
+                </a>
+                <p class="footer__description">
+                    Misiunea noastră este în crearea <br>
+                    celor mai bune locuinte pentru oameni.
+                </p>
+            </div>
+
+            <!-- <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        About
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Features</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">News & Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Company
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">How We Work?</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Capital</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Security</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Support
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Support center</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div>
+                    <h3 class="footer__title">
+                        Urmărește-ne
+                    </h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/platvecon" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                        <a href="https://www.pinterest.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-tiktok'></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__info container">
+            <span class="footer__copy">
+                &#169; PlatVecon. All rigths reserved
+            </span>
+
+            <div class="footer__privacy">
+                <a href="#">Terms & Agreements</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-chevrons-up'></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

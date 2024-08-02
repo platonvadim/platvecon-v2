@@ -1780,3 +1780,75 @@ footer {
   -webkit-user-select: none;
   -o-user-select: none;
 }
+
+.products-grid {
+  margin: 0 -20px;
+  font-size: 0
+}
+
+.products-grid .grid-item {
+  display: inline-block;
+  width: 50%;
+  height: 335px;
+  padding: 30px;
+  transition: opacity 0.2s;
+  vertical-align: top;
+  background: linear-gradient(101deg, hsl(145, 58%, 39%), hsl(145, 66%, 47%));
+  color: #FFF;
+  background-position: 50% 50%;
+  background-size: cover
+}
+
+/* Productie cards */
+.products-grid .grid-item:hover {
+  transition: none;
+  opacity: 0.85
+}
+
+.products-grid .grid-item .title {
+  text-align: center;
+  font-size: 36px
+}
+
+.products-grid .grid-item .info {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 18px
+}
+
+.products-grid .grid-item .phone {
+  margin-top: 10px;
+  font-size: 48px;
+  font-weight: 700
+}
+
+.products-grid .grid-item .phone a {
+  color: inherit
+}
+
+@media (max-width:940px) {
+  .products-grid .grid-item .phone {
+    font-size: 36px
+  }
+}
+
+@media (max-width:767px) {
+  .products-grid .grid-item {
+    width: 100%
+  }
+}
+
+.panel.menu {
+  background-color: #fff;
+  bottom: 0;
+  display: none;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 12;
+}

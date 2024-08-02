@@ -353,7 +353,7 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-document.getElementById("defaultOpen").click();
+// document.getElementById("defaultOpen").click();
 sr.reveal(`.home__title, .subscribe__container, .footer__container`)
 sr.reveal(`.home__description, .footer__info`, { delay: 500 })
 sr.reveal(`.home__search`, { delay: 600 })
